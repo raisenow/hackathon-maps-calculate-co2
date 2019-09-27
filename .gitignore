@@ -1,0 +1,13 @@
+/*
+!src
+!.babelrc
+!.browserslistrc
+!.gitignore
+!.nvmrc
+!globals.d.ts
+!package.json
+!package-lock.json
+!postcss.config.js
+!tsconfig.json
+!webpack.config.ts
+!tailwind.config.js

@@ -1,0 +1,212 @@
+$header-width: 6.5625rem;
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+///////////////////////////////////////////////////////////////////////////////
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+}
+
+p {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+.header {
+  height: $header-width;
+  background-color: #005ba2;
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  .navigation-cont {
+    flex-grow: 1;
+  }
+
+  .logo {
+    background-image: url('./assets/logo.png');
+    background-size: cover;
+    width: 220px;
+    height: 56px;
+  }
+
+  .navigation {
+    background-image: url('./assets/navigation.png');
+    background-size: cover;
+    width: 626px;
+    height: 61px;
+    margin-left: auto;
+  }
+}
+
+.map {
+  width: 100%;
+  height: calc(100vh - #{$header-width});
+}
+
+.form-container {
+  position: absolute;
+  top: 14rem;
+  left: 4.375rem;
+  width: 27.5rem;
+
+  background-color: #fff;
+
+  box-shadow: 0 2px 60px 0 rgba(0, 0, 0, 0.3);
+}
+
+.form-container__form {
+  padding: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.form-container__calculations {
+  padding: 2.5rem;
+  padding-top: 2rem;
+  border-top: 3px dashed #eee;
+
+  .row-button {
+    margin-top: 2rem;
+
+    button {
+      padding: 1rem 2rem;
+      color: #fff;
+      background-color: #005ba2;
+      border: none;
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &:focus {
+        background-color: #006bba;
+      }
+    }
+  }
+}
+
+.tamaro-wrapper-container {
+  box-shadow: none;
+  max-width: 40rem;
+  margin: 5rem auto;
+
+  padding: 1.75rem 1.25rem;
+  overflow: hidden;
+
+  @media (min-width: 767px) {
+    padding: 2.5rem 3rem;
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+.row-input {
+  padding-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #ddd;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #aaa;
+  }
+}
+
+.row-radios-group {
+  padding-bottom: 1.5rem;
+}
+
+.row-radios-group--inline {
+  display: flex;
+
+  input {
+    margin-right: 0.5rem;
+  }
+
+  label + label {
+    margin-left: 1rem;
+  }
+}
+
+.row-calculations {
+  display: flex;
+
+  .distance,
+  .amount {
+    width: 50%;
+
+    .label {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    .value {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Spinner
+///////////////////////////////////////////////////////////////////////////////
+
+@keyframes spinner-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+}
+
+.icon-spinner {
+  width: 3.75rem;
+  height: 3.75rem;
+  animation: spinner-rotate 1s linear infinite;
+
+  &__stop {
+    stop-color: #005ba2;
+  }
+
+  &__circle {
+    stroke-width: 0.5rem;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+

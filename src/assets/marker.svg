@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>group-11</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="group-11" transform="translate(3.000000, 3.000000)" fill-rule="nonzero">
+            <g id="Group" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5">
+                <g id="b-link">
+                    <circle id="b" cx="26" cy="26" r="26"></circle>
+                </g>
+            </g>
+            <path d="M29.259,16.968 L26.404,16.968 L22.245,24.628 L17.352,24.628 C16.4214002,24.628 15.667,25.3824002 15.667,26.313 C15.667,27.2435998 16.4214002,27.998 17.352,27.998 L22.245,27.998 L26.404,35.658 L29.258,35.658 L26.404,27.998 L31.774,27.998 L33.349,29.887 L35.666,29.887 L34.146,27.23 C34.5114618,26.6721968 34.5114618,25.9508032 34.146,25.393 L35.666,22.736 L33.348,22.736 L31.773,24.626 L26.403,24.626 L29.259,16.968 L29.259,16.968 Z" id="Path" fill="#000000"></path>
+        </g>
+    </g>
+</svg>
